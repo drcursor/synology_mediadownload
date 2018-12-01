@@ -1,5 +1,19 @@
 # What does it do
 
+Easy and maintainable way to install Transmission (Torrent downloader), Filebot (Media organizer), Flexget (used for RSS processing), Couchpotato (Movie tracking).
+
+# Why ?
+
+Because Synocommunity is great, but their packages are usually out of data, and its hard to keep everything running with the correct user permissions.
+
+# Requirements
+
+- Synology device with support for Docker (well, actually... the Dockerfiles are generic enough, so they should run on anything capable of running Docker)
+- Filebot license
+- ShowRSS account (nice to have)
+- IMDB account (nice to have)
+- Lots of free hard drive space
+
 # How to install
 
 - Install Docker app on your Synology device
