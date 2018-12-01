@@ -1,0 +1,19 @@
+web_server: 5080
+
+schedules:
+  # Run every task once an hour
+  - tasks: '*'
+    interval:
+      minutes: 10
+
+tasks:
+  showrss task:
+    rss: http://replaceme
+    all_series: yes
+    transmission:
+      host: 192.168.0.201
+      port: 9091
+      username: admin
+      password: password
+      path: /downloads/RSS/
+      addpaused: no

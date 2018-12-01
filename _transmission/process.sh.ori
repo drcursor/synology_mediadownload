@@ -1,0 +1,11 @@
+#!/bin/sh
+touch /home/media/filebot/lastrun
+
+case "$TR_TORRENT_DIR" in
+  */downloads/RSS/*)
+     filebot -script fn:amc --output "/media/" --log-file /home/media/filebot/amc.log --action move --conflict override -non-strict --def music=y artwork=n "ut_dir=$TR_TORRENT_DIR/$TR_TORRENT_NAME" "ut_kind=multi" "ut_title=$TR_TORRENT_NAME" plex=192.168.0.201 >> /home/media/filebot/filebotout.log 2>&1
+    echo abc
+    ;;
+esac
+
+
