@@ -46,7 +46,7 @@
     "rpc-enabled": true,
     "rpc-host-whitelist": "",
     "rpc-host-whitelist-enabled": true,
-    "rpc-password": "{c0be4107f4d32e4ea634a1a00bdd8324bcd16ba25//Milda",
+    "rpc-password": "",
     "rpc-port": 9091,
     "rpc-url": "/transmission/",
     "rpc-username": "admin",
