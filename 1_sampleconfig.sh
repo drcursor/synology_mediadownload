@@ -1,3 +1,5 @@
+#!/bin/bash
+
 source run.conf
 
 # Transmission

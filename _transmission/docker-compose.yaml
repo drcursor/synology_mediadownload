@@ -1,0 +1,14 @@
+version: "3"
+services:
+  media_transmission3:
+    container_name: media_transmission3
+    image: eb/transmission:3
+    volumes:
+      - /volume1/Media:/media
+      - /volume1/downloads:/downloads
+      - /volume1/Plex/Support/integrated/data/filebot:/home/media/filebot
+      - /volume1/Plex/Support/integrated/data/transmission:/var/lib/transmission-daemon
+    restart: unless-stopped
+    network_mode: host
+    ports:
+      - "9091"
